@@ -204,8 +204,9 @@ ul {
 
 .btn-primary:hover {
     background-color: #0270ad;
+    border-color: #f59e0b;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(2, 132, 199, 0.45);
+    box-shadow: 0 0 0 2px #f59e0b, 0 8px 20px rgba(2, 132, 199, 0.45);
 }
 
 .btn-whatsapp {
@@ -216,8 +217,9 @@ ul {
 
 .btn-whatsapp:hover {
     background-color: var(--accent-green-hover);
+    border-color: #86efac;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.45);
+    box-shadow: 0 0 0 2px #86efac, 0 8px 20px rgba(16, 185, 129, 0.45);
 }
 
 .btn-call {
@@ -229,8 +231,9 @@ ul {
 .btn-call:hover {
     background-color: var(--accent-green-hover);
     color: var(--bg-white);
+    border-color: #7dd3fc;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.45);
+    box-shadow: 0 0 0 2px #7dd3fc, 0 8px 20px rgba(16, 185, 129, 0.45);
 }
 
 .btn-outline {
@@ -243,10 +246,26 @@ ul {
     border-color: var(--accent-cyan);
     color: var(--accent-cyan);
     background-color: rgba(2, 132, 199, 0.05);
+    box-shadow: 0 0 0 2px var(--accent-cyan);
 }
 
 .btn-full {
     width: 100%;
+}
+
+.mobile-toggle:hover {
+    color: var(--accent-cyan);
+    border-color: var(--accent-cyan);
+}
+
+.gallery-control-btn:hover {
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+}
+
+.modal-close:hover {
+    border-color: #f59e0b;
+    color: #f59e0b;
 }
 
 
