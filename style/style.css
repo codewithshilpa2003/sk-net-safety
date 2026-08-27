@@ -236,6 +236,20 @@ ul {
     box-shadow: 0 0 0 2px #7dd3fc, 0 8px 20px rgba(16, 185, 129, 0.45);
 }
 
+.btn-email {
+    background-color: var(--primary-blue);
+    color: var(--bg-white);
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+}
+
+.btn-email:hover {
+    background-color: #1d4ed8;
+    color: var(--bg-white);
+    border-color: #93c5fd;
+    transform: translateY(-2px);
+    box-shadow: 0 0 0 2px #93c5fd, 0 8px 20px rgba(37, 99, 235, 0.45);
+}
+
 .btn-outline {
     background-color: transparent;
     border-color: var(--border-light);
@@ -2007,6 +2021,29 @@ textarea.form-control {
     box-shadow: 0 8px 24px rgba(2, 132, 199, 0.5);
 }
 
+.floating-email {
+    position: fixed;
+    bottom: 165px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-blue);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.4);
+    z-index: 999;
+    transition: var(--transition-smooth);
+}
+
+.floating-email:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.5);
+}
+
 .enquiry-popup {
     position: fixed;
     left: 25px;
@@ -2099,10 +2136,15 @@ textarea.form-control {
 @media (max-width: 576px) {
 
     .floating-whatsapp,
-    .floating-call {
+    .floating-call,
+    .floating-email {
         right: 16px;
         width: 52px;
         height: 52px;
+    }
+
+    .floating-email {
+        bottom: 150px;
     }
 
     .floating-call {
